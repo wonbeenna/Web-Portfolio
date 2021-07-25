@@ -1,10 +1,47 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: sticky;
   width: 90vw;
+  height: 55px;
   margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-
+.header__left {
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
 .header__right {
   display: flex;
+}
+.header__right div {
+  margin-right: 5px;
+}
+.header__contact {
+  z-index: 3;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+.header__list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 25px 0;
+  list-style: none;
+}
+.header__list a {
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.75);
+}
+.header__list li {
+  margin-bottom: 5px;
+  cursor: pointer;
 }
