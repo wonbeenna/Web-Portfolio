@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import "../css/Header.css";
 
 function Header() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<Boolean>(false);
   const openContainer = useCallback(() => {
     setOpen(!open);
   }, [open]);
