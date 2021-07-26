@@ -9,21 +9,11 @@ import About from "./About";
 function Main() {
   return (
     <div className="Main">
-      <section>
-        <Header />
-      </section>
-      <section>
-        <Banner />
-      </section>
-      <section>
-        <About />
-      </section>
-      <section>
-        <Stack />
-      </section>
-      <section>
-        <Projects />
-      </section>
+      <Header />
+      <Banner />
+      <About />
+      <Stack />
+      <Projects />
     </div>
   );
 }

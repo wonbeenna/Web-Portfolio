@@ -1,5 +1,5 @@
 .stack {
-  padding: 0 10vw;
+  padding: 5vw 10vw;
 }
 
 .stack__list {
@@ -9,18 +9,18 @@
 
 .stack__title {
   font-size: 25px;
-  padding: 20px;
+  padding: 25px;
 }
 .stack__most,
 .stack__last {
-  padding: 15px;
+  padding: 35px;
 }
 .stack__mostBox,
 .stack__lastBox {
   position: relative;
-  width: 400px;
-  height: 200px;
-  border: 1px solid black;
+  width: 35vw;
+  height: 40vh;
+  border: 1px solid rgb(209, 209, 209);
   border-radius: 5px;
 }
 .stack__mostBoxTitle,
@@ -28,12 +28,12 @@
   font-size: 18px;
   background-color: white;
   position: absolute;
-  top: -10px;
+  top: -15px;
   left: 20px;
   margin: 0;
 }
 
 .stack__list img {
-  width: 50px;
-  height: 50px;
+  width: 4vw;
+  height: 8vh;
 }

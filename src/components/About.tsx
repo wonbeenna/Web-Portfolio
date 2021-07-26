@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="about">
       <div className="about__container">
-        <p className="about__title">About</p>
+        <p className="about__title">ABOUT</p>
         <p className="about__content">안녕하세요</p>
         <p className="about__content__textA">
           저는 코드스테이츠 부트캠프에서 31주간의 교육을 통해 팀원들과의 협업,
