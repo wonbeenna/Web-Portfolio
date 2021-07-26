@@ -1,0 +1,14 @@
+.Banner {
+  background-color: #e0e0e0;
+}
+.Banner__container {
+  padding: 20vh 10vw 15vh;
+}
+
+.Banner__title {
+  font-size: 35px;
+}
+
+.Banner__content {
+  font-size: 27px;
+}
