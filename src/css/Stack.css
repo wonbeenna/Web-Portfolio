@@ -8,7 +8,7 @@
 }
 
 .stack__title {
-  font-size: 25px;
+  font-size: 35px;
   padding: 25px;
 }
 .stack__most,
@@ -19,7 +19,7 @@
 .stack__lastBox {
   position: relative;
   width: 35vw;
-  height: 40vh;
+  height: auto;
   border: 1px solid rgb(209, 209, 209);
   border-radius: 5px;
 }
@@ -34,6 +34,6 @@
 }
 
 .stack__list img {
-  width: 4vw;
-  height: 8vh;
+  width: 5vw;
+  height: auto;
 }

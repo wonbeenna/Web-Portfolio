@@ -32,18 +32,18 @@ function Stack() {
         <div className="stack__mostBox">
           <p className="stack__mostBoxTitle">프로젝트 경험이 있습니다</p>
           <div className="stack__most">
-            <img src={react} {...Scroll("up", 1, 0.5)} alt="" />
+            <img src={react} {...Scroll("up", 1, 0.3)} alt="" />
             <img src={reactRouter} {...Scroll("up", 1, 0.5)} alt="" />
-            <img src={reactHooks} {...Scroll("up", 1, 0.5)} alt="" />
+            <img src={reactHooks} {...Scroll("up", 1, 0.2)} alt="" />
             <img src={redux} {...Scroll("up", 1, 0.5)} alt="" />
-            <img src={typescript} {...Scroll("up", 1, 0.5)} alt="" />
+            <img src={typescript} {...Scroll("up", 1, 0.4)} alt="" />
             <img src={html} {...Scroll("up", 1, 0.5)} alt="" />
             <img src={javascript} {...Scroll("up", 1, 0.5)} alt="" />
             <img src={css} {...Scroll("up", 1, 0.5)} alt="" />
-            <img src={github} {...Scroll("up", 1, 0.5)} alt="" />
+            <img src={github} {...Scroll("up", 1, 0.2)} alt="" />
             <img src={awsEc2} {...Scroll("up", 1, 0.5)} alt="" />
             <img src={awsRoute53} {...Scroll("up", 1, 0.5)} alt="" />
-            <img src={awsS3} {...Scroll("up", 1, 0.5)} alt="" />
+            <img src={awsS3} {...Scroll("up", 1, 0.1)} alt="" />
           </div>
         </div>
 
@@ -51,13 +51,13 @@ function Stack() {
           <p className="stack__lastBoxTitle">꾸준히 학습 중 입니다</p>
           <div className="stack__last">
             <img src={firebase} {...Scroll("up", 1, 0.5)} alt="" />
-            <img src={mysql} {...Scroll("up", 1, 0.5)} alt="" />
+            <img src={mysql} {...Scroll("up", 1, 0.2)} alt="" />
             <img src={nodejs} {...Scroll("up", 1, 0.5)} alt="" />
-            <img src={sass} {...Scroll("up", 1, 0.5)} alt="" />
-            <img src={sequelize} {...Scroll("up", 1, 0.5)} alt="" />
+            <img src={sass} {...Scroll("up", 1, 0.4)} alt="" />
+            <img src={sequelize} {...Scroll("up", 1, 0.3)} alt="" />
             <img src={reactNative} {...Scroll("up", 1, 0.5)} alt="" />
             <img src={mongoDB} {...Scroll("up", 1, 0.5)} alt="" />
-            <img src={jwt} {...Scroll("up", 1, 0.5)} alt="" />
+            <img src={jwt} {...Scroll("up", 1, 0.1)} alt="" />
           </div>
         </div>
       </div>
