@@ -1,12 +1,47 @@
 .Banner {
   background-color: #e0e0e0;
-}
-.Banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20vh 10vw 15vh;
 }
+.Banner__info {
+  padding-right: 10vw;
+  width: 18vw;
+  word-break: keep-all;
+}
 .Banner__title {
-  font-size: 35px;
+  font-size: 45px;
+}
+.Banner__title span {
+  font-size: 45px;
+  font-weight: 600;
 }
 .Banner__content {
-  font-size: 27px;
+  font-size: 20px;
+  width: 25vw;
+}
+
+.Banner__img img {
+  width: 400px;
+  height: auto;
+  background: gray;
+  margin: 0;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .Banner {
+    flex-direction: column;
+  }
+  .Banner__img img {
+    width: 70vw;
+  }
+  .Banner__info {
+    width: 70vw;
+    padding-right: 0;
+  }
+  .Banner__content {
+    width: 70vw;
+  }
 }
