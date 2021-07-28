@@ -4,11 +4,15 @@ import first from "../img/first.png";
 import final from "../img/final.png";
 import firstLogo from "../img/firstLogo.png";
 import finalLogo from "../img/finalLogo.png";
+import calendar from "../img/calendar.png";
+import link from "../img/link.png";
+import user from "../img/user.png";
+import stack from "../img/stack.png";
 import github from "../img/github.png";
 
 function Projects() {
   // const TOTAL_SLIDES = 1;
-  const [currentSlide, setCurrentSlide] = useState<any>(0);
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
   const slideRef = useRef<any>(null);
 
   const firstPage = () => {
@@ -39,29 +43,28 @@ function Projects() {
     <div className="projects">
       <div className="projects__title">Projects</div>
 
-      <div className="projects__buttons">
-        {currentSlide === 0 ? (
-          <button className="projects__button">First Project</button>
-        ) : (
-          <button className="projects__button__invalid" onClick={firstPage}>
-            First Project
-          </button>
-        )}
-        {currentSlide === -100 ? (
-          <button className="projects__button">Final Project</button>
-        ) : (
-          <button className="projects__button__invalid" onClick={finalPage}>
-            Final Project
-          </button>
-        )}
-      </div>
-
       <div className="projects__box" ref={slideRef}>
+        <div className="projects__buttons">
+          {currentSlide === 0 ? (
+            <button className="projects__button">First Project</button>
+          ) : (
+            <button className="projects__button__invalid" onClick={firstPage}>
+              First Project
+            </button>
+          )}
+          {currentSlide === -100 ? (
+            <button className="projects__button">Final Project</button>
+          ) : (
+            <button className="projects__button__invalid" onClick={finalPage}>
+              Final Project
+            </button>
+          )}
+        </div>
         {currentSlide === 0 ? (
           <div className="projects__contents">
             <div className="projects__content">
               <div className="projects__names">
-                <img src={firstLogo} alt="" />
+                <img className="projects__contentImg" src={firstLogo} alt="" />
                 <div className="projects__name">Don't Stop</div>
               </div>
 
@@ -70,23 +73,23 @@ function Projects() {
               </div>
 
               <div className="projects__date">
-                <img src={firstLogo} alt="" />
+                <img className="projects__icon" src={user} alt="" />
                 <p>4명</p>
-                <img src={firstLogo} alt="" />
+                <img className="projects__icon" src={calendar} alt="" />
                 <p>2주</p>
               </div>
 
               <div className="projects__Stacks">
-                <img src={firstLogo} alt="" />
+                <img className="projects__icon" src={stack} alt="" />
                 <p>Javascript, React, Redux, AWS(S3)</p>
               </div>
 
               <div className="projects__url">
-                <img src={firstLogo} alt="" />
+                <img className="projects__icon" src={link} alt="" />
                 <a href="" target="_blank" rel="noreferrer noopener">
-                  Link
+                  Web Site Link
                 </a>
-                <img src={github} alt="" />
+                <img className="projects__contentImg" src={github} alt="" />
                 <a
                   className="projects__github"
                   href=""
@@ -97,14 +100,14 @@ function Projects() {
                 </a>
               </div>
             </div>
-            <img src={first} alt="" />
+            <img className="project__Img" src={first} alt="" />
           </div>
         ) : null}
         {currentSlide === -100 ? (
           <div className="projects__contents">
             <div className="projects__content">
               <div className="projects__names">
-                <img src={finalLogo} alt="" />
+                <img className="projects__contentImg" src={finalLogo} alt="" />
                 <div className="projects__name">TMT</div>
               </div>
 
@@ -113,14 +116,14 @@ function Projects() {
               </div>
 
               <div className="projects__date">
-                <img src={finalLogo} alt="" />
+                <img className="projects__icon" src={user} alt="" />
                 <p>4명</p>
-                <img src={finalLogo} alt="" />
+                <img className="projects__icon" src={calendar} alt="" />
                 <p>4주</p>
               </div>
 
               <div className="projects__Stacks">
-                <img src={finalLogo} alt="" />
+                <img className="projects__icon" src={stack} alt="" />
                 <p>
                   TypeScript, JavaScript, React, Redux, AWS(S3, Cloud Front,
                   Route53)
@@ -128,15 +131,15 @@ function Projects() {
               </div>
 
               <div className="projects__url">
-                <img src={finalLogo} alt="" />
+                <img className="projects__icon" src={link} alt="" />
                 <a
                   href="https://tmtrips.com"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  Link
+                  Web Site Link
                 </a>
-                <img src={github} alt="" />
+                <img className="projects__contentImg" src={github} alt="" />
                 <a
                   className="projects__github"
                   href=""
@@ -147,7 +150,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-            <img src={final} alt="" />
+            <img className="project__Img" src={final} alt="" />
           </div>
         ) : null}
       </div>

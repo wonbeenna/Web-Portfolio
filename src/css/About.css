@@ -1,19 +1,87 @@
 .about {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 15vh 10vw;
   justify-content: center;
+  padding: 5vh 5vw;
 }
 
 .about__title {
   font-size: 45px;
   font-weight: 600;
+  color: #0773ca;
 }
+.about__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.about__profile {
+  margin: 25px;
+}
+.about__profileImg {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 100%;
+}
+
 .about__content__textA,
 .about__content__textB,
 .about__content__textC {
   word-break: keep-all;
 }
+
+.about__info {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  /* white-space: nowrap; */
+}
+.about__education,
+.about__experience {
+  margin: 0 20px;
+}
+.about__eduTitle,
+.about__expTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0773ca;
+  margin: 10px;
+}
+.about__eduList,
+.about__expList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+.about__eduDate,
+.about__expDate {
+  width: 150px;
+}
+.about__eduNames,
+.about__expNames {
+  display: flex;
+  margin: 10px;
+}
+.about__eduName,
+.about__expName {
+  font-weight: 600;
+}
+.about__eduInt,
+.about__expInt {
+  color: #0773ca;
+}
+.about__eduInfo p {
+  font-size: 15px;
+  margin: 5px;
+}
+.about__eduInfo,
+.about__expInfo {
+  margin-left: 30px;
+}
+
 .stack {
   padding-left: 5vw;
   display: flex;
@@ -31,7 +99,7 @@
 }
 .stack__mostBox,
 .stack__lastBox {
-  width: 20vw;
+  width: 30vw;
   height: auto;
   flex: 1;
   border-radius: 5px;
@@ -60,11 +128,37 @@
   width: 5vw;
   height: auto;
 }
-
-@media screen and (max-width: 1170px) {
-  .about {
+@media screen and (max-width: 1264px) {
+  .about__container {
     flex-direction: column;
   }
+  .about__info {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 844px) {
+  .about__info {
+    margin: 0;
+  }
+  .about__container {
+    flex-direction: column;
+  }
+  .about__eduNames {
+    flex-direction: column;
+  }
+  .about__eduInfo {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 440px) {
+  .about__expNames {
+    flex-direction: column;
+  }
+  .about__expInfo {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1170px) {
   .stack {
     width: 80vw;
     padding: 0;
@@ -91,5 +185,14 @@
   .stack__lastBoxTitle {
     font-size: 11px;
     padding: 0 0 10px 0;
+  }
+  .about__content__textA,
+  .about__content__textB,
+  .about__content__textC {
+    font-size: 13px;
+  }
+  .about__profileImg {
+    width: 150px;
+    height: 150px;
   }
 }

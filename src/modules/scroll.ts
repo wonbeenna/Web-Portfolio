@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef } from "react";
 const Scroll = (direction = "up", duration = 1, delay = 0) => {
   const element = useRef<any>();
 
-  const handleDirection = (name: any) => {
+  const handleDirection = (name: string) => {
     switch (name) {
       case "up":
         return "translate3d(0, 50%, 0)";
@@ -36,7 +36,7 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
   }, []);
 
   useEffect(() => {
-    let observer: any;
+    let observer: IntersectionObserver;
     const { current } = element;
     if (current) {
       observer = new IntersectionObserver(handleScroll, { threshold: 0.5 });

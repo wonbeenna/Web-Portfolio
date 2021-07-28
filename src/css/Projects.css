@@ -1,25 +1,37 @@
 .projects {
-  height: 100%;
-  padding: 10vw;
-  background-color: #e0e0e0;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 5vw;
+  background: rgb(245, 245, 245);
+  height: 100vh;
 }
-
 .projects__title {
   font-size: 45px;
   font-weight: 600;
+  color: #0773ca;
+  margin: 25px;
 }
-
 .projects__contents {
-  width: 80vw;
+  width: 60vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.projects__contents img {
-  width: 40vw;
+.project__Img {
+  width: 35vw;
   height: auto;
   border-radius: 10px;
+}
+.projects__contentImg {
+  width: 40px;
+  height: auto;
+}
+.projects__icon {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
 }
 .projects__contents a {
   text-decoration: none;
@@ -31,6 +43,7 @@
 
 .projects__box {
   margin: 25px auto;
+  flex: 1;
 }
 
 .projects__buttons {
@@ -38,7 +51,7 @@
   margin-top: 10px;
 }
 .projects__button {
-  background: black;
+  background: #0773ca;
   color: white;
   border-style: none;
   cursor: pointer;
@@ -47,33 +60,59 @@
   height: 35px;
 }
 .projects__button__invalid {
-  background: gray;
-  color: rgb(209, 209, 209);
+  background: rgb(230, 230, 230);
+  color: rgb(180, 180, 180);
   border-style: none;
   cursor: pointer;
   align-items: center;
   width: 120px;
   height: 35px;
 }
-
-.projects__content img {
-  width: 50px;
-  height: auto;
+.projects__button__invalid:hover {
+  color: white;
+  background: #0773ca;
+  transition: all 0.3s;
 }
+
 .projects__names {
   display: flex;
+  margin-bottom: 10px;
 }
 .projects__name {
   font-size: 30px;
 }
 .projects__date {
   display: flex;
+  align-items: center;
 }
 .projects__Stacks {
   display: flex;
   color: rgb(0, 0, 0, 0.75);
+  align-items: center;
 }
 .projects__url {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .projects__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects__contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects__buttons {
+    margin-bottom: 25px;
+  }
+  .project__Img {
+    width: 50vw;
+  }
 }
