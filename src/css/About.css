@@ -17,18 +17,21 @@
   margin-bottom: 50px;
 }
 .about__profile {
-  margin: 25px;
-}
-.about__profileImg {
+  margin: 7vw;
   width: 200px;
   height: 200px;
   border: 1px solid gray;
   border-radius: 100%;
 }
 
+.about__contents {
+  margin: 7vw;
+}
+
 .about__content__textA,
 .about__content__textB,
-.about__content__textC {
+.about__content__textC,
+.about__content__textD {
   word-break: keep-all;
 }
 
@@ -36,7 +39,6 @@
   display: flex;
   justify-content: center;
   margin: 25px;
-  /* white-space: nowrap; */
 }
 .about__education,
 .about__experience {
@@ -83,7 +85,7 @@
 }
 
 .stack {
-  padding-left: 5vw;
+  padding-bottom: 5vw;
   display: flex;
 }
 
@@ -129,9 +131,9 @@
   height: auto;
 }
 @media screen and (max-width: 1264px) {
-  .about__container {
+  /* .about__container {
     flex-direction: column;
-  }
+  } */
   .about__info {
     flex-direction: column;
   }
@@ -188,7 +190,8 @@
   }
   .about__content__textA,
   .about__content__textB,
-  .about__content__textC {
+  .about__content__textC,
+  .about__content__textD {
     font-size: 13px;
   }
   .about__profileImg {
