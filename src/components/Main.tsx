@@ -5,11 +5,13 @@ import Projects from "./Projects";
 import "../css/Main.css";
 import About from "./About";
 import Footer from "./Footer";
+import topArrow from "../img/topArrow.png";
+import topArrowHover from "../img/topArrowHover.png";
 
 function Main() {
   const [ScrollY, setScrollY] = useState<number>(0);
   const [scrollBtn, setScrollBtn] = useState<boolean>(false);
-
+  const [imgHover, setImgHover] = useState<boolean>(false);
   const ScrollHandler = () => {
     setScrollY(window.pageYOffset);
     if (ScrollY > 500) {
@@ -43,8 +45,10 @@ function Main() {
       <button
         className={scrollBtn ? "Main__topBtn active" : "Main__topBtn"}
         onClick={TopHandler}
+        onMouseOver={() => setImgHover(true)}
+        onMouseOut={() => setImgHover(false)}
       >
-        <p>Top</p>
+        <img src={imgHover ? topArrowHover : topArrow} alt="" />
       </button>
       <Header />
       <Banner />

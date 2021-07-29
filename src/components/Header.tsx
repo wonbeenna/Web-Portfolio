@@ -5,6 +5,7 @@ function Header() {
   const [ScrollY, setScrollY] = useState<number>(0);
   const [Header, setHeader] = useState(false);
   const [open, setOpen] = useState<Boolean>(false);
+
   const openContainer = useCallback(() => {
     setOpen(!open);
   }, [open]);
@@ -41,28 +42,25 @@ function Header() {
           <p className="header__contact" onClick={openContainer}>
             CONTACT
           </p>
-          {open ? (
-            <div className="header__list">
-              <a
-                className="header__git"
-                href="https://github.com/wonbeenna"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                GitHub
-              </a>
-              <a
-                className="header__blog"
-                href="https://www.notion.so/Been-38c479097c3e4ebcb6d5ede959f5d5c3"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Blog
-              </a>
-            </div>
-          ) : (
-            ""
-          )}
+
+          <div className={open ? "header__list is-open" : "header__list"}>
+            <a
+              className="header__git"
+              href="https://github.com/wonbeenna"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+            <a
+              className="header__blog"
+              href="https://www.notion.so/Been-38c479097c3e4ebcb6d5ede959f5d5c3"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Blog
+            </a>
+          </div>
         </div>
       </div>
     </div>
