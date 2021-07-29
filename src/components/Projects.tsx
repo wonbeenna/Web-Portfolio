@@ -11,7 +11,6 @@ import stack from "../img/stack.png";
 import github from "../img/github.png";
 
 function Projects() {
-  // const TOTAL_SLIDES = 1;
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const slideRef = useRef<any>(null);
 
@@ -25,19 +24,6 @@ function Projects() {
     slideRef.current.style.transition = "all 0.5s ease-in-out";
     slideRef.current.style.transform = `translateX(-${currentSlide}00%)`;
   }, [currentSlide]);
-
-  // const changePage = () => {
-  //   clearTimeout(setTimeout(changePage, 10000));
-  //   currentSlide === -100 * TOTAL_SLIDES
-  //     ? setCurrentSlide(0)
-  //     : setCurrentSlide(currentSlide - 100);
-  // };
-  // useEffect(() => {
-  //   setTimeout(changePage, 10000);
-  //   return () => {
-  //     clearTimeout(setTimeout(changePage, 10000));
-  //   };
-  // }, [currentSlide]);
 
   return (
     <div className="projects">
@@ -92,7 +78,7 @@ function Projects() {
                 <img className="projects__contentImg" src={github} alt="" />
                 <a
                   className="projects__github"
-                  href=""
+                  href="https://github.com/codestates/DontStop-client"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
@@ -140,7 +126,7 @@ function Projects() {
                 <img className="projects__contentImg" src={github} alt="" />
                 <a
                   className="projects__github"
-                  href=""
+                  href="https://github.com/codestates/TMT-client"
                   target="_blank"
                   rel="noreferrer noopener"
                 >

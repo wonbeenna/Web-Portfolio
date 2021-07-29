@@ -7,3 +7,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+button,
+html [type="button"] {
+  -webkit-appearance: none;
+}
+* {
+  -webkit-text-size-adjust: none;
+}
