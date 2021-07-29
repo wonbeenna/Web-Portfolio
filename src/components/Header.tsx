@@ -59,14 +59,6 @@ function Header() {
               >
                 Blog
               </a>
-              <a
-                className="header__resume"
-                href="https://www.notion.so/Resume-3d25edd559ee4f46a3832e3d51c586dd"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Resume
-              </a>
             </div>
           ) : (
             ""

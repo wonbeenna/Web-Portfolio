@@ -5,13 +5,11 @@
   justify-content: center;
   padding: 5vh 5vw;
   background: rgb(245, 245, 245);
-  height: 100vh;
 }
 .projects__title {
   font-size: 45px;
   font-weight: 600;
   color: #0773ca;
-  margin: 25px;
 }
 .projects__contents {
   width: 60vw;
@@ -20,22 +18,26 @@
   align-items: center;
 }
 .project__Img {
-  width: 35vw;
+  width: 40vw;
   height: auto;
   border-radius: 10px;
 }
 .projects__contentImg {
-  width: 40px;
+  width: 33px;
   height: auto;
 }
 .projects__icon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin: 5px;
 }
 .projects__contents a {
   text-decoration: none;
   color: rgb(0, 0, 0, 0.75);
+  margin: 3px;
+}
+.projects__contents p {
+  margin: 3px;
 }
 .projects__content {
   flex: 1;
@@ -47,7 +49,7 @@
 }
 
 .projects__buttons {
-  max-width: 240px;
+  max-width: 260px;
   margin-top: 10px;
 }
 .projects__button {
@@ -56,8 +58,8 @@
   border-style: none;
   cursor: pointer;
   align-items: center;
-  width: 120px;
-  height: 35px;
+  width: 130px;
+  height: 40px;
 }
 .projects__button__invalid {
   background: rgb(230, 230, 230);
@@ -65,8 +67,8 @@
   border-style: none;
   cursor: pointer;
   align-items: center;
-  width: 120px;
-  height: 35px;
+  width: 130px;
+  height: 40px;
 }
 .projects__button__invalid:hover {
   color: white;
@@ -79,7 +81,8 @@
   margin-bottom: 10px;
 }
 .projects__name {
-  font-size: 30px;
+  font-size: 28px;
+  color: #0773ca;
 }
 .projects__date {
   display: flex;
@@ -94,7 +97,7 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .projects__box {
     display: flex;
     flex-direction: column;

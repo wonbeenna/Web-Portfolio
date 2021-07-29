@@ -41,7 +41,7 @@ function Projects() {
 
   return (
     <div className="projects">
-      <div className="projects__title">Projects</div>
+      <p className="projects__title">Projects</p>
 
       <div className="projects__box" ref={slideRef}>
         <div className="projects__buttons">
@@ -68,9 +68,9 @@ function Projects() {
                 <div className="projects__name">Don't Stop</div>
               </div>
 
-              <div className="projects__introduce">
+              <p className="projects__introduce">
                 스터디 모집 및 공부시간 체크
-              </div>
+              </p>
 
               <div className="projects__date">
                 <img className="projects__icon" src={user} alt="" />
@@ -111,9 +111,7 @@ function Projects() {
                 <div className="projects__name">TMT</div>
               </div>
 
-              <div className="projects__introduce">
-                국내 여행일정 및 경로 설정
-              </div>
+              <p className="projects__introduce">국내 여행일정 및 경로 설정</p>
 
               <div className="projects__date">
                 <img className="projects__icon" src={user} alt="" />

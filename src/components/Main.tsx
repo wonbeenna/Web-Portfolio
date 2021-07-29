@@ -44,7 +44,7 @@ function Main() {
         className={scrollBtn ? "Main__topBtn active" : "Main__topBtn"}
         onClick={TopHandler}
       >
-        <p>&#10140;</p>
+        <p>Top</p>
       </button>
       <Header />
       <Banner />
