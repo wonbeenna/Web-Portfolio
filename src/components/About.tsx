@@ -17,6 +17,7 @@ import awsEc2 from "../img/aws-ec2.png";
 import awsRoute53 from "../img/aws-route53.png";
 import awsS3 from "../img/aws-s3.png";
 
+import next from "../img/nextJs.png";
 import firebase from "../img/firebase.png";
 import mysql from "../img/mysql.png";
 import nodejs from "../img/nodejs.png";
@@ -195,6 +196,7 @@ function About() {
 
               <img src={jwt} {...Scroll("up", 1, 0.1)} alt="" />
               <img src={firebase} {...Scroll("up", 1, 0.5)} alt="" />
+              <img src={next} {...Scroll("up", 1, 0.2)} alt="" />
             </div>
           </div>
         </div>
