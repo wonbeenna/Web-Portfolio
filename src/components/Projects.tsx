@@ -72,7 +72,11 @@ function Projects() {
 
               <div className="projects__url">
                 <img className="projects__icon" src={link} alt="" />
-                <a href="" target="_blank" rel="noreferrer noopener">
+                <a
+                  href="https://dontstop.site"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   Web Site Link
                 </a>
                 <img className="projects__contentImg" src={github} alt="" />
