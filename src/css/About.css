@@ -17,7 +17,7 @@
   margin-bottom: 50px;
 }
 .about__profile {
-  margin: 7vw;
+  margin: 10px;
   width: 200px;
   height: 200px;
   border: 1px solid gray;
@@ -25,13 +25,12 @@
 }
 
 .about__contents {
-  margin: 7vw;
+  margin: 30px;
 }
 
 .about__content__textA,
 .about__content__textB,
-.about__content__textC,
-.about__content__textD {
+.about__content__textC {
   word-break: keep-all;
 }
 
